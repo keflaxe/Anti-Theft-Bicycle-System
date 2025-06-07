@@ -1,0 +1,33 @@
+ body {
+     margin: 0;
+     padding: 0;
+ }
+
+ #map {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     width: 100%;
+ }
+
+.marker {
+    width: 30px;
+    height: 30px;
+    background-color: #4287f5;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    position: relative;
+}
+
+.marker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid white;
+}
